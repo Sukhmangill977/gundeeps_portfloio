@@ -978,3 +978,127 @@ footer {
 footer p {
   text-align: center;
 }
+
+
+
+
+/* CERTIFICATES, COMMUNICATION, AND LANGUAGES SECTION */
+#certificates-communication {
+  padding: 4rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.container {
+  display: flex;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  flex-wrap: wrap; /* Make it responsive */
+}
+
+/* Left Side - Certificates */
+.certificates-box {
+  flex: 1 1 300px; /* Allow flexibility and set minimum width */
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.certificates-box .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.certificate-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certificate-list li {
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.certificate-list a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.certificate-list a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Right Side - Communication and Languages */
+.right-boxes {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex: 1 1 300px; /* Allow flexibility and set minimum width */
+}
+
+.communication-box,
+.languages-box {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.communication-box h2,
+.languages-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.communication-box p,
+.languages-box h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+.publication-box  {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.publication-box h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.publication-box p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+/* Responsive Design for smaller screens */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1.5rem; /* Adjust gap for smaller screens */
+  }
+
+  .right-boxes {
+    flex-direction: column;
+  }
+
+  .certificates-box, .communication-box, .languages-box {
+    width: 100%; /* Full width for smaller screens */
+  }
+}
+
+
+
+.container {
+  position: relative;
+}
